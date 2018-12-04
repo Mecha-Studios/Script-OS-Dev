@@ -23,6 +23,16 @@
                 } else {
                     document.body.innerHTML += "<p>WRONG PASSWORD OR USERNAME</p>";
                 }
+                
+                if (username.value == "owner") {
+                    if (password.value == "ownerofscriptos0717") {
+                        window.location.replace('start.html');
+                    } else {
+                        document.body.innerHTML += "<p>WRONG PASSWORD OR USERNAME</p>";
+                    }
+                } else {
+                    document.body.innerHTML += "<p>WRONG PASSWORD OR USERNAME</p>";
+                }
             }
         </script>
     </div>
