@@ -5,10 +5,10 @@
 </head>
 <body style="background: url('images/2 wallpaper.png') no-repeat center center fixed;">
     <div style="display:inline">
-        <h1 style="font-family:'Bauhaus 93'">Script OS Login</h1>
-        <input type="text" id="username" placeholder="Username" />
-        <input type="password" id="password" placeholder="Password" />
-        <input type="button" value="Login" onclick="login()"/>
+        <h1 style="font-family:'Bauhaus 93'; font-size:50px">Script OS Login</h1>
+        <input style="width: 50%;font-size: 75px" type="text" id="username" placeholder="Username" />
+        <input style="width: 50%;font-size: 75px" type="password" id="password" placeholder="Password" />
+        <input style="width: 50%;font-size: 75px" type="button" value="Login" onclick="login()"/>
         <script>
             function login() {
                 var username = document.getElementById('username');
@@ -16,16 +16,6 @@
 
                 if (username.value == "admin") {
                     if (password.value == "iamaverifieddeveloperforscriptos") {
-                        window.location.replace('start.html');
-                    } else {
-                        document.body.innerHTML += "<p>WRONG PASSWORD OR USERNAME</p>";
-                    }
-                } else {
-                    document.body.innerHTML += "<p>WRONG PASSWORD OR USERNAME</p>";
-                }
-                
-                if (username.value == "owner") {
-                    if (password.value == "ownerofscriptos0717") {
                         window.location.replace('start.html');
                     } else {
                         document.body.innerHTML += "<p>WRONG PASSWORD OR USERNAME</p>";

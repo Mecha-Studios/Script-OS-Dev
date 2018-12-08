@@ -40,7 +40,7 @@
         }
     </style>
     <p>Script OS 2.0</p>
-    <p>Developer Beta 1</p>
+    <p>Developer Beta 2</p>
     <div id="login">
         <script>
             document.getElementById('login').style.display = 'none'
@@ -77,7 +77,7 @@
         <input title="Settings" type="image" id="icon4" src="http://icons.iconarchive.com/icons/dtafalonso/android-lollipop/256/Settings-icon.png" style="width:50px; height:100%" onclick="document.getElementById('settings').style.display = 'inline'" />
         <input id="icon5" title="S Browser" type="image" src="images/script os S Browser icon.png" style="width:50px; height:50px" class="" onclick="document.getElementById('browser').style.display='inline'" />
         <input id="icon6" title="Files" type="image" src="images/script os files icon.png" style="width:50px; height:50px" onclick="document.getElementById('filesapp').style.display = 'inline'" />
-        <input id="notificationbell" title="Notifications" type="image" onclick="document.getElementById('notificationcenter').style.display = 'inline'" src="https://image.flaticon.com/icons/svg/61/61073.svg" style="width:50px; height:50px; z-index: 100; position:absolute; right:0;"/>
+        <input id="notificationbell" title="Notifications(1)" type="image" onclick="document.getElementById('notificationcenter').style.display = 'inline'" src="https://image.flaticon.com/icons/svg/61/61073.svg" style="width:50px; height:50px; z-index: 100; position:absolute; right:0;"/>
     </div>
     <div id="apps">
         <script>
@@ -107,7 +107,7 @@
         <input class="" type="image" style="width:10%;" src="http://www.clker.com/cliparts/k/p/z/N/Y/g/paint.svg" title="Background"  onclick="document.getElementById('backgroundsettings').style.display='inline'"/>
         <input class="" type="image" style="width:10%;" title="User Settings" src="images/script os user icon.png" onclick="document.getElementById('usersettings').style.display = 'inline'"/>
         <input class="" type="image" src="images/Script OS 2 logo.png" style="width:10%;" onclick="document.getElementById('mydiv').style.display='inline'"/>
-        <button class="" onclick="document.getElementById('userexperience').style.display='inline'">User Experience</button>
+        <input type="image" src="images/script os shortcuts logo.png"  style="width:10%;" onclick="document.getElementById('shortcutsapp').style.display='inline'" title="Shortcuts[COMING SOON]"/>
         <input type="image" style="width:10%;" src="images/script os 2 help icon.png" title="Help" />
     </div>
     <div id="backgroundsettings">
@@ -171,24 +171,13 @@
         <p>User Rights</p>
         <input disabled value="Development" />
     </div>
-    <div id="userexperience">
-        <script>
-            document.getElementById('userexperience').style.display = 'none';
-        </script>
-        <div id="userexperienceheader">
-            User Experience
-            <input type="button" value="X" onclick="document.getElementById('userexperience').style.display = 'none'" />
-        </div>
-        Dark Mode
-        <input type="button" value="Dark Mode[In the Works]" onclick="darkMode()" />
-        <input type="button" value="Light Mode" onclick="lightMode()" />
-    </div>
+
     <div id="browser">
         <script>
             document.getElementById('browser').style.display = 'none'
         </script>
         <div id="browserheader">
-            Browser
+            S Browser
             <button class="" onclick="document.getElementById('browser').style.display='none'">X</button>
             <button class="" onclick="document.getElementById('browser').style.width = '90%'; document.getElementById('browser').style.height = '90%';">[]</button>
             <button class="" onclick="document.getElementById('browser').style.width = '250px'; document.getElementById('browser').style.height = '250px';">=</button>
@@ -326,22 +315,24 @@
         <input type="button" onclick="document.getElementById('saveas').style.display = 'inline'" value="Save As" />
         <textarea id="text-box"></textarea>
     </div>
-    <div id="saveas">
-        <script>
-            document.getElementById('saveas').style.display = 'none';
-        </script>
-        <div id="saveasheader">
-
-        </div>
-        Save As <input id="filenameinput" />
-        <input type="button" disabled onclick="save()" />
-    </div>
     <div id="notificationcenter" >
         <div id="notificationcenterheader">
             Notifications
-            <input type="button" value="\/" onclick="document.getElementById('notificationcenter').style.display = 'none'"/>
+            <input type="button" value="X" onclick="document.getElementById('notificationcenter').style.display = 'none'" />
+            <input type="button" value="\/" onclick="document.getElementById('notificationcenter').style.height = '30%'" />
+            <input type="button" value="/\" onclick="document.getElementById('notificationcenter').style.height = '50%'" />
         </div>
-        <p style="color:white;">No Notifications Here...</p>
+        <div id="notifications">
+            <div id="notification">
+                <h4 style="font-family:'Bauhaus 93'">Script OS 2.0</h4>
+                <p>Script OS 2.0 will be available in 2019</p>
+            </div>
+        </div>
+        <div id="userexperience">
+            <h4 style="font-family:'Bauhaus 93'">Dark Mode</h4>
+            <input type="image" style="width:20%" src="images/script os dark mode icon.png"  title="Dark Mode" onclick="darkMode()" />
+            <input type="image" style="width:20%" src="images/script os light mode icon.png" title="Light Mode" onclick="lightMode()" />
+        </div>
     </div>
     <div id="imagesapp">
         <div id="imagesappheader">
